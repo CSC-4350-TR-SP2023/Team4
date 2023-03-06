@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Policy Vote - Login</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<style>
+		body {
+			background-color: #222;
+			font-family: 'Roboto', sans-serif;
+			color: #fff;
+			margin: 0;
+			padding: 0;
+		}
+		.navbar {
+			background-color: #000;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 10px 20px;
+		}
+		.navbar img {
+			height: 75px;
+			margin-right: 10px;
+		}
+		.navbar ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			align-items: center;
+		}
+		.navbar li {
+			margin-left: 20px;
+		}
+		.navbar a {
+			color: #fff;
+			text-decoration: none;
+		}
+		.container {
+			margin: 0 auto;
+			max-width: 400px;
+			padding: 50px;
+			box-sizing: border-box;
+		}
+		.form-group {
+			margin-bottom: 20px;
+		}
+		label {
+			display: block;
+			margin-bottom: 5px;
+		}
+		input[type="email"],
+		input[type="password"] {
+			display: block;
+			width: 100%;
+			padding: 10px;
+			border: none;
+			border-radius: 5px;
+			background-color: #555;
+			color: #fff;
+			font-size: 16px;
+			box-sizing: border-box;
+		}
+		input[type="submit"] {
+			display: block;
+			width: 100%;
+			padding: 10px;
+			background-color: #333333;
+			color: #fff;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			font-size: 16px;
+			box-sizing: border-box;
+			margin-bottom: 10px;
+		}
+		input[type="submit"]:hover {
+			background-color: #00BB00;
+		}
+		.forgot-password {
+			text-align: right;
+			font-size: 14px;
+		}
+		.forgot-password a {
+			color: #fff;
+			text-decoration: none;
+		}
+	</style>
+</head>
+<body>
+	<nav class="navbar">
+		<img src="PV-logo.png" alt="Logo Placeholder">
+		<ul>
+			<li><a href="#">Settings</a></li>
+		</ul>
+	</nav>
+	<div class="container">
+		<form>
+			<div class="form-group">
+				<label for="email">Email</label>
+				<input type="email" id="email" name="email" required>
+			</div>
+			<div class="form-group">
+				<label for="password">Password</label>
+				<input type="password" id="password" name="password" required>
+			</div>
+			<input type="submit" value="Login">
+			<div class="forgot-password">
+				<a href="#">Forgot Password</a>
+			</div>
+		</form>
+	</div>
+</body>
+</html>
