@@ -74,8 +74,27 @@
 			box-sizing: border-box;
 			margin-bottom: 10px;
 		}
+        input[type="button"] {
+			display: block;
+			width: 100%;
+			padding: 10px;
+			background-color: #333333;
+			color: #fff;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			font-size: 16px;
+			box-sizing: border-box;
+			margin-bottom: 10px;
+		}
 		input[type="submit"]:hover {
 			background-color: #00BB00;
+		}
+        input[type="button"]:hover {
+			background-color: #00BB00;
+		}
+        .form-register-button:hover {
+			background-color: #BB0000;
 		}
 		.forgot-password {
 			text-align: right;
@@ -90,12 +109,9 @@
 <body>
 	<nav class="navbar">
 		<img src="PV-logo.png" alt="Logo Placeholder">
-		<ul>
-			<li><a href="#">Settings</a></li>
-		</ul>
 	</nav>
 	<div class="container">
-		<form>
+		<form action="main.html" method="post" target="_blank">
 			<div class="form-group">
 				<label for="email">Email</label>
 				<input type="email" id="email" name="email" required>
@@ -105,9 +121,12 @@
 				<input type="password" id="password" name="password" required>
 			</div>
 			<input type="submit" value="Login">
-			<div class="forgot-password">
-				<a href="#">Forgot Password</a>
+            <div class="forgot-password">
+			<center><a href="forgot.html">Forgot Password</a>
 			</div>
+            <br>
+            <input type="button" value="Register"><a href="register.html"></a>
+
 		</form>
 	</div>
 </body>

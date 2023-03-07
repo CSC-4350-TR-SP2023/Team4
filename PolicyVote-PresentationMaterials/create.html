@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Create Vote - Policy Vote</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<style type="text/css">
+
+		.vote-page-section {
+			margin: 50px auto;
+			max-width: 800px;
+			padding: 20px;
+			background-color: #2c2f33;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+			text-align: center;
+		}
+
+		.vote-page-section h2 {
+			font-size: 36px;
+			font-weight: 500;
+			margin-bottom: 20px;
+			color: #bbb;
+            text-align: center;
+		}
+
+		.vote-page-section .vote-text {
+			font-size: 18px;
+			margin-bottom: 20px;
+			line-height: 2;
+			color: #bbb;
+            text-align: justify;
+		}
+
+		.vote-page-section .vote-yes-no {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin-bottom: 20px;
+		}
+
+		.vote-page-section .vote-yes {
+			background-color: #00BB00;
+			color: #fff;
+			padding: 20px 40px;
+			border-radius: 5px;
+			margin-right: 20px;
+			font-size: 24px;
+			font-weight: 500;
+			cursor: pointer;
+		}
+
+		.vote-page-section .vote-no {
+			background-color: #BB0000;
+			color: #fff;
+			padding: 20px 40px;
+			border-radius: 5px;
+			font-size: 24px;
+			font-weight: 500;
+			cursor: pointer;
+		}
+
+		.vote-page-section .vote-submit {
+			background-color: #0000BB;
+			color: #fff;
+			padding: 20px 40px;
+			border-radius: 5px;
+			font-size: 24px;
+			font-weight: 500;
+			cursor: pointer;
+        }
+		
+        .vote-page-section .vote-submit:hover {
+			background-color: #3333BB;
+		}
+        .vote-page-section .vote-no:hover {
+			background-color: #BB3333;
+		}
+        .vote-page-section .vote-yes:hover {
+			background-color: #33BB33;
+		}
+	</style>
+</head>
+<body>
+	<nav>
+		<img src="PV-logo.png" alt="Policy Vote logo" onclick="window.open('main.html','_blank')">
+		<ul>
+			<li><a href="main.html">Home</a></li>
+			<li><a href="create.html">Create Vote</a></li>
+			<li><a href="groupman.html">Groups</a></li>
+            <li><a href="settings.html">Settings</a></li>
+		</ul>
+		<div class="logout-tab" onclick="window.open('login.html')">Log Out</div>
+	</nav>
+
+	<div class="vote-page-section">
+		<h2 contentEditable="true">Click to edit...</h2>
+		<p contentEditable="true" class="vote-text">
+Click to edit...
+<br>
+It's ironic that while AI was initially seen as a threat to human creativity and writing, it has actually turned out to be a powerful tool that can enhance and augment human writing (or generate sample text). With recent advances in natural language processing and machine learning, an artificial intelligence (AI) can now generate text that is so convincing and realistic that it's often difficult to distinguish it from text written by a human. For a long time, one of the key criticisms of AI-generated text was that it lacked the human touch – the nuance, creativity, and complexity that comes from a human mind. Yet, this paragraph you just read was written by an AI, demonstrating the significant strides made in producing high-quality and coherent text using AI technology.
+        </p>
+		
+		<button class="vote-submit" onclick="window.open('main.html')">Create Vote</button>
+	</div>
+</body>
+</html>

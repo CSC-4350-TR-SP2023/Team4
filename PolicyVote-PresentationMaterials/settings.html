@@ -3,6 +3,8 @@
 <head>
 	<title>Policy Vote - Settings</title>
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    
 	<style>
 		body {
 			background-color: #222;
@@ -11,31 +13,7 @@
 			margin: 0;
 			padding: 0;
 		}
-		.navbar {
-			background-color: #333;
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
-			padding: 10px 20px;
-		}
-		.navbar img {
-			height: 50px;
-			margin-right: 10px;
-		}
-		.navbar ul {
-			list-style-type: none;
-			margin: 0;
-			padding: 0;
-			display: flex;
-			align-items: center;
-		}
-		.navbar li {
-			margin-left: 20px;
-		}
-		.navbar a {
-			color: #fff;
-			text-decoration: none;
-		}
+		
 		.container {
 			display: flex;
 			margin: 0 auto;
@@ -118,139 +96,25 @@
 			margin-bottom: 20px;
 		}
 		
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Policy Vote - Settings</title>
-	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-	<style>
-		body {
-			background-color: #222;
-			font-family: 'Roboto', sans-serif;
-			color: #fff;
-			margin: 0;
-			padding: 0;
-		}
-		.navbar {
-			background-color: #333;
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
-			padding: 10px 20px;
-		}
-		.navbar img {
-			height: 50px;
-			margin-right: 10px;
-		}
-		.navbar ul {
-			list-style-type: none;
-			margin: 0;
-			padding: 0;
-			display: flex;
-			align-items: center;
-		}
-		.navbar li {
-			margin-left: 20px;
-		}
-		.navbar a {
-			color: #fff;
-			text-decoration: none;
-		}
-		.container {
-			display: flex;
-			margin: 0 auto;
-			max-width: 800px;
-			padding: 20px;
-			box-sizing: border-box;
-		}
-		.sidebar {
-			background-color: #444;
-			width: 200px;
-			height: calc(100vh - 100px);
-			padding: 10px;
-			box-sizing: border-box;
-			overflow-y: scroll;
-		}
-		.sidebar a {
-			display: block;
-			color: #fff;
-			margin-bottom: 10px;
-			padding: 10px;
-			border-radius: 5px;
-			text-decoration: none;
-			transition: background-color 0.2s;
-		}
-		.sidebar a:hover {
-			background-color: #555;
-		}
-		.content {
-			background-color: #333;
-			width: 100%;
-			height: calc(100vh - 100px);
-			padding: 20px;
-			box-sizing: border-box;
-			overflow-y: scroll;
-		}
-		.section {
-			margin-bottom: 20px;
-		}
-		.section h2 {
-			margin-bottom: 10px;
-		}
-		.field {
-			margin-bottom: 10px;
-		}
-		.field label {
-			display: block;
-			margin-bottom: 5px;
-		}
-		.field input[type="text"],
-		.field input[type="email"],
-		.field input[type="password"] {
-			display: block;
-			width: 100%;
-			padding: 10px;
-			border: none;
-			border-radius: 5px;
-			background-color: #444;
-			color: #fff;
-			font-size: 16px;
-			box-sizing: border-box;
-		}
-		.field input[type="submit"] {
-			display: block;
-			padding: 10px;
-			background-color: #FF6B6B;
-			color: #fff;
-			border: none;
-			border-radius: 5px;
-			cursor: pointer;
-			font-size: 16px;
-			box-sizing: border-box;
-			margin-top: 10px;
-		}
-		.field input[type="submit"]:hover {
-			background-color: #E84C3D;
-		}
-		.divider {
-			height: 1px;
-			background-color: #fff;
-			margin-bottom: 20px;
-		}
-	</style>
+</style>
 </head>
 <body>
-	<div class="navbar">
-		<img src="PV-logo.png">
+	<nav>
+		<img src="PV-logo.png" alt="Policy Vote logo" onclick="window.open('main.html','_blank')">
 		<ul>
-			<li><a href="#">Settings</a></li>
+			<li><a href="main.html">Home</a></li>
+			<li><a href="create.html">Create Vote</a></li>
+			<li><a href="groupman.html">Groups</a></li>
+            <li><a href="settings.html">Settings</a></li>
 		</ul>
-	</div>
+		<div class="logout-tab" onclick="window.open('login.html')">Log Out</div>
+	</nav>
+    <center><h1>Settings</h1></center>
 	<div class="container">
 		<div class="sidebar">
 			<a href="#user-info">User Info</a>
 			<a href="#vote-history">Vote History</a>
-			<a href="#view-group">View Group</a>
+			<a href="#view-groups">View Groups</a>
 		</div>
 		<div class="content">
 			<div class="section" id="user-info">
@@ -280,7 +144,7 @@
 					<input type="password" id="retype-password" name="retype-password" required>
 				</div>
 				<div class="field">
-					<input type="submit" value="Confirm">
+					<center><input type="submit" value="Confirm"></center>
 				</div>
 			</div>
 			<div class="divider"></div>
@@ -295,9 +159,9 @@
 				</ul>
 			</div>
 			<div class="divider"></div>
-			<div class="section" id="view-group">
-				<h2>View Group</h2>
-				<p>Coming soon...</p>
+			<div class="section" id="view-groups">
+				<h2>View Groups</h2>
+				<p>This will exist eventually, but basically it would show your active groups and, depending on permissions, your group members.</p>
 			</div>
 		</div>
 	</div>

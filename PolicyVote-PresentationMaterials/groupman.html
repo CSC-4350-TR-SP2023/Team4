@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Policy Vote - Group Manager</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    
+	<style>
+        ::-webkit-scrollbar { 
+            display: none;  /* Safari and Chrome */
+        }
+        
+		body {
+			background-color: #222;
+			font-family: 'Roboto', sans-serif;
+			color: #fff;
+			margin: 0;
+			padding: 0;
+		}
+		
+		.container {
+			display: flex;
+			margin: 0 auto;
+			max-width: 1000px;
+			padding: 20px;
+			box-sizing: border-box;
+		}
+		.sidebar {
+			background-color: #444;
+			width: 250px;
+			height: calc(100vh - 200px);
+			padding: 10px;
+			box-sizing: border-box;
+			overflow-y: scroll;
+		}
+        
+        .sidebar::-webkit-scrollbar { 
+            display: none;  /* Safari and Chrome */
+        }
+		.sidebar a {
+			display: block;
+			color: #fff;
+			margin-bottom: 10px;
+			padding: 10px;
+			border-radius: 5px;
+			text-decoration: none;
+			transition: background-color 0.2s;
+            font-size:24px;
+		}
+		.sidebar a:hover {
+			background-color: #555;
+		}
+		.content {
+			background-color: #333;
+			width: 100%;
+			height: calc(100vh - 200px);
+			padding: 20px;
+			box-sizing: border-box;
+			overflow-y: scroll;
+		}
+		.section {
+			margin-bottom: 20px;
+		}
+		.section h2 {
+			margin-bottom: 10px;
+		}
+		.field {
+			margin-bottom: 10px;
+		}
+		.field label {
+			display: block;
+			margin-bottom: 5px;
+		}
+		.field input[type="text"],
+		.field input[type="email"],
+		.field input[type="password"] {
+			display: block;
+			width: 100%;
+			padding: 10px;
+			border: none;
+			border-radius: 5px;
+			background-color: #444;
+			color: #fff;
+			font-size: 16px;
+			box-sizing: border-box;
+		}
+		.field input[type="submit"] {
+			display: block;
+			padding: 10px;
+			background-color: #FF6B6B;
+			color: #fff;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			font-size: 16px;
+			box-sizing: border-box;
+			margin-top: 10px;
+		}
+		.field input[type="submit"]:hover {
+			background-color: #E84C3D;
+		}
+		.divider {
+			height: 1px;
+			background-color: #fff;
+			margin-bottom: 20px;
+		}
+		
+</style>
+</head>
+<body>
+		<nav>
+		<img src="PV-logo.png" alt="Policy Vote logo" onclick="window.open('main.html','_blank')">
+		<ul>
+			<li><a href="main.html">Home</a></li>
+			<li><a href="create.html">Create Vote</a></li>
+			<li><a href="groupman.html">Groups</a></li>
+            <li><a href="settings.html">Settings</a></li>
+		</ul>
+		<div class="logout-tab" onclick="window.open('login.html')">Log Out</div>
+	</nav>
+    <center><h1>Group Management</h1></center>
+	<div class="container">
+		<div class="sidebar">
+			<a href="#add-user">Add User</a>
+            <div class="divider"></div>
+			<a href="#1">Group 1</a>
+			<a href="#2">Group 2</a>
+            <a href="#3">Group 3</a>
+			<a href="#4">Group 4</a>
+            <a href="#More">More</a>
+			<a href="#Groups">Groups</a>
+            <a href="#To">To</a>
+			<a href="#Demonstrate">Demonstrate</a>
+            <a href="#Scrolling">Scrolling</a>
+			<a href="#Capabilities">Capabilities</a>
+            <a href="#Of">Of</a>
+			<a href="#Side">Side</a>
+            <a href="#Menu">Menu</a>
+			<a href="#2">Bar</a>
+		</div>
+		<div class="content">
+			<div class="section" id="add-user">
+				<h2>Add User</h2>
+				<div class="field">
+					<label for="first-name">First Name</label>
+					<input type="text" id="first-name" name="first-name">
+				</div>
+				<div class="field">
+					<label for="last-name">Last Name</label>
+					<input type="text" id="last-name" name="last-name">
+				</div>
+				<div class="field">
+					<label for="email">Email</label>
+					<input type="email" id="email" name="email" required>
+				</div><br>
+                <center><select id="cars" name="cars" style="width:150px; font-size:24px">
+                <option value="1">Group 1</option>
+                <option value="2">Group 2</option>
+                <option value="3">Group 3</option>
+                <option value="4">Group 4</option>
+                </select></center><br>
+				<div class="field">
+					<center><input type="submit" value="Confirm"></center>
+				</div>
+			</div>
+			<div class="divider"></div>
+			<div class="section" id="1">
+				<h2>Group 1</h2>
+                <div class="field">
+					<label for="password">Group Password</label>
+					<input type="password" id="password" name="password" placeholder="RandomPasswordButNotReallyRandom">
+                    <center><input type="submit" value="Confirm"></center>
+				</div>
+<style>
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #222;
+    color: white;
+  }
+  
+  td:last-child {
+    text-align: center;
+  }
+</style>
+
+<table>
+  <thead>
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Email</th>
+      <th>Select</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Warren</td>
+      <td>Buffett</td>
+      <td>warren.buffett@example.com</td>
+      <td><input type="checkbox"></td>
+    </tr>
+    <tr>
+      <td>Jeff</td>
+      <td>Bezos</td>
+      <td>jeff.bezos@example.com</td>
+      <td><input type="checkbox"></td>
+    </tr>
+    <tr>
+      <td>Elon</td>
+      <td>Musk</td>
+      <td>elon.musk@example.com</td>
+      <td><input type="checkbox"></td>
+    </tr>
+    <tr>
+      <td>Mark</td>
+      <td>Zuckerberg</td>
+      <td>mark.zuckerberg@example.com</td>
+      <td><input type="checkbox"></td>
+    </tr>
+    <tr>
+      <td>Bill</td>
+      <td>Gates</td>
+      <td>bill.gates@example.com</td>
+      <td><input type="checkbox"></td>
+    </tr>
+  </tbody>
+</table>
+
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+  <button>Delete Selected</button>
+  <button onclick="selectAll()">Select All</button>
+</div>
+
+<script>
+  function selectAll() {
+    var checkboxes = document.querySelectorAll('tbody input[type="checkbox"]');
+    for (var i = 0; i < checkboxes.length; i++) {
+      checkboxes[i].checked = true;
+    }
+  }
+</script>
+
+
+
+
+			</div>
+			<div class="divider"></div>
+			<div class="section" id="2">
+				<h2>Group 2</h2>
+                <div class="field">
+					<label for="password">Group Password</label>
+					<input type="password" id="password" name="password" placeholder="RandomGroup2PasswordButNotReallyRandom">
+                    <center><input type="submit" value="Confirm"></center>
+				</div>
+                <table>
+  <thead>
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Email</th>
+      <th>Select</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Warren</td>
+      <td>Buffett</td>
+      <td>warren.buffett@example.com</td>
+      <td><input type="checkbox"></td>
+    </tr>
+    <tr>
+      <td>Jeff</td>
+      <td>Bezos</td>
+      <td>jeff.bezos@example.com</td>
+      <td><input type="checkbox"></td>
+    </tr>
+    <tr>
+      <td>Elon</td>
+      <td>Musk</td>
+      <td>elon.musk@example.com</td>
+      <td><input type="checkbox"></td>
+    </tr>
+    <tr>
+      <td>Mark</td>
+      <td>Zuckerberg</td>
+      <td>mark.zuckerberg@example.com</td>
+      <td><input type="checkbox"></td>
+    </tr>
+    <tr>
+      <td>Bill</td>
+      <td>Gates</td>
+      <td>bill.gates@example.com</td>
+      <td><input type="checkbox"></td>
+    </tr>
+  </tbody>
+</table>
+
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+  <button>Delete Selected</button>
+  <button onclick="selectAll()">Select All</button>
+</div>
+				<p>I think you get the idea...</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+

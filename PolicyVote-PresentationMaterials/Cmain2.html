@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Policy Vote</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: 'Roboto', sans-serif;
+			background-color: #1a1a1a;
+			color: #ffffff;
+		}
+		
+		.navbar {
+			display: flex;
+			align-items: center;
+			background-color: #262626;
+			padding: 0 20px;
+			height: 60px;
+		}
+		
+		.logo {
+			width: 50px;
+			height: 50px;
+			background-color: #ffffff;
+			margin-right: 20px;
+		}
+		
+		.settings {
+			margin-left: auto;
+		}
+		
+		h1 {
+			margin: 20px;
+			font-size: 36px;
+			font-weight: 700;
+			text-align: center;
+		}
+		
+		.vote-block {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+			padding: 20px;
+			border-bottom: 1px solid #555555;
+			cursor: pointer;
+			transition: background-color 0.3s ease;
+		}
+		
+		.vote-block:hover {
+			background-color: #555555;
+		}
+		
+		.vote-block-title {
+			font-size: 24px;
+			font-weight: 700;
+			margin-bottom: 10px;
+		}
+		
+		.vote-block-preview {
+			font-size: 14px;
+			margin-right: 20px;
+			width: calc(100% - 240px);
+		}
+		
+		.vote-block-yes-no {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+		}
+		
+		.vote-block-yes {
+			font-size: 48px;
+			font-weight: 700;
+			color: #00ff00;
+			margin-right: 10px;
+		}
+		
+		.vote-block-no {
+			font-size: 48px;
+			font-weight: 700;
+			color: #ff0000;
+			margin-right: 20px;
+		}
+		
+		.current-votes-list {
+			height: 500px;
+			overflow-y: scroll;
+			margin: 20px;
+		}
+		
+		.current-votes-list::-webkit-scrollbar {
+			width: 8px;
+			background-color: #555555;
+		}
+		
+		.current-votes-list::-webkit-scrollbar-thumb {
+			background-color: #888888;
+		}
+	</style>
+</head>
+<body>
+	<div class="navbar">
+		<div class="logo"></div>
+		<h1>Policy Vote</h1>
+		<div class="settings">Settings</div>
+	</div>
+	<div class="current-votes">
+		<h2>Current Votes</h2>
+		<div class="current-votes-list">
+			<div class="vote-block">
+				<div class="vote-block-title">Vote Title 2</div>
+				<div class="vote-block-preview">Mauris bibendum tristique est, at rutrum nisi sollicitudin ac.</div>
+				<div class="vote-block-yes-no">
+					<div class="vote-block-yes-no-count">
+						<div class="vote-block-yes">25</div>
+						<div class="vote-block-no">75</div>
+					</div>
+				</div>
+			</div>
+			<div class="vote-block">
+				<div class="vote-block-title">Vote Title 3</div>
+				<div class="vote-block-preview">Praesent vitae libero quis urna posuere semper.</div>
+				<div class="vote-block-yes-no">
+					<div class="vote-block-preview">Praesent vitae libero quis urna posuere semper.</div>
+					<div class="vote-block-yes-no-count">
+						<div class="vote-block-yes">75</div>
+						<div class="vote-block-no">25</div>
+					</div>
+				</div>
+			</div>
+			<div class="vote-block">
+				<div class="vote-block-title">Vote Title 4</div>
+				<div class="vote-block-preview">Nam pharetra tincidunt mauris, eget suscipit purus feugiat at.</div>
+				<div class="vote-block-yes-no">
+					<div class="vote-block-preview">Nam pharetra tincidunt mauris, eget suscipit purus feugiat at.</div>
+					<div class="vote-block-yes-no-count">
+						<div class="vote-block-yes">60</div>
+						<div class="vote-block-no">40</div>
+					</div>
+				</div>
+			</div>
+			<div class="vote-block">
+				<div class="vote-block-title">Vote Title 5</div>
+				<div class="vote-block-preview">Suspendisse pharetra tellus a mi lacinia congue.</div>
+				<div class="vote-block-yes-no">
+					<div class="vote-block-preview">Suspendisse pharetra tellus a mi lacinia congue.</div>
+					<div class="vote-block-yes-no-count">
+						<div class="vote-block-yes">90</div>
+						<div class="vote-block-no">10</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="past-votes">
+		<h2>Past Votes</h2>
+		<!-- Past Votes section goes here -->
+	</div>
+</body>
+</html>

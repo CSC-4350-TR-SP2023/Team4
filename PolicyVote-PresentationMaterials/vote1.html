@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vote Page - Policy Vote</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<style type="text/css">
+
+		.vote-page-section {
+			margin: 50px auto;
+			max-width: 800px;
+			padding: 20px;
+			background-color: #2c2f33;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+			text-align: center;
+		}
+
+		.vote-page-section h2 {
+			font-size: 36px;
+			font-weight: 500;
+			margin-bottom: 20px;
+			color: #fff;
+            text-align: center;
+		}
+
+		.vote-page-section .vote-text {
+			font-size: 18px;
+			margin-bottom: 20px;
+			line-height: 2;
+			color: #fff;
+            text-align: justify;
+		}
+
+		.vote-page-section .vote-yes-no {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin-bottom: 20px;
+		}
+
+		.vote-page-section .vote-yes {
+			background-color: #00BB00;
+			color: #fff;
+			padding: 20px 40px;
+			border-radius: 5px;
+			margin-right: 20px;
+			font-size: 24px;
+			font-weight: 500;
+			cursor: pointer;
+		}
+
+		.vote-page-section .vote-no {
+			background-color: #BB0000;
+			color: #fff;
+			padding: 20px 40px;
+			border-radius: 5px;
+			font-size: 24px;
+			font-weight: 500;
+			cursor: pointer;
+		}
+
+		.vote-page-section .vote-submit {
+			background-color: #0000BB;
+			color: #fff;
+			padding: 20px 40px;
+			border-radius: 5px;
+			font-size: 24px;
+			font-weight: 500;
+			cursor: pointer;
+        }
+		
+        .vote-page-section .vote-submit:hover {
+			background-color: #3333BB;
+		}
+        .vote-page-section .vote-no:hover {
+			background-color: #BB3333;
+		}
+        .vote-page-section .vote-yes:hover {
+			background-color: #33BB33;
+		}
+	</style>
+</head>
+<body>
+	<nav>
+		<img src="PV-logo.png" alt="Policy Vote logo" onclick="window.open('main.html','_blank')">
+		<ul>
+			<li><a href="main.html">Home</a></li>
+			<li><a href="create.html">Create Vote</a></li>
+			<li><a href="groupman.html">Groups</a></li>
+            <li><a href="settings.html">Settings</a></li>
+		</ul>
+		<div class="logout-tab" onclick="window.open('login.html')">Log Out</div>
+	</nav>
+
+	<div class="vote-page-section">
+		<h2>Should AI such as ChatGPT be regulated by Congress?</h2>
+		<p class="vote-text"><br>
+The increasing use of artificial intelligence (AI) is transforming various industries, including healthcare, transportation, and finance. However, there are growing concerns that AI may threaten jobs in some areas, such as artists and programmers. With this in mind, there is a debate as to whether Congress should regulate AI to ensure it is used ethically and safely.
+<br><br>
+On the one hand, regulating AI could offer guidelines for how AI should be used to assist humans rather than replacing them. Laws could be introduced to ensure that AI is not used in a discriminatory way and to prevent certain unethical practices. Furthermore, there are growing concerns regarding the use of AI in areas such as facial recognition and surveillance, and the introduction of regulations could alleviate some of these concerns.
+<br><br>
+On the other hand, overregulation could impede innovation in the field and slow progress in the development of AI technology. Given the rapid pace of technological change, there is a risk that regulation could be outdated by the time it is enacted. It is also challenging to create regulations that are flexible enough to keep up with the evolving nature of AI.
+<br><br>
+Ultimately, the decision of whether or not to regulate AI is a complex one that requires careful consideration from lawmakers, industry experts, and the public. While there are valid concerns about the potential impact of AI on jobs and society as a whole, there is also a need to ensure that any regulations put in place do not stifle innovation and progress in the field.
+<br><br>
+So, should AI such as ChatGPT be regulated by Congress?
+        </p>
+		
+		<div class="vote-yes-no">
+			<button class="vote-yes">Yes</button>
+			<button class="vote-no">No</button>
+		</div>
+
+		<button class="vote-submit">Submit Vote</button>
+	</div>
+</body>
+</html>
